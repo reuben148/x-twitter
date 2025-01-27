@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Messages() {
   return (
-    <div>
-      
+    <div className='h-screen'>
+      <h1>Welcome Messages</h1>
     </div>
   )
 }
