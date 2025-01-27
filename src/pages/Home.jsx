@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Home() {
   return (
-    <div>
-      <h1>Welcome to Home</h1>
+    <div className='sm:border-l-2 border-gray-600 h-screen '> 
+      <h1 className='text-white'>Welcome to Home</h1>
     </div>
   )
 }
