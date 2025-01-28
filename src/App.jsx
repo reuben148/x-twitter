@@ -225,6 +225,7 @@ export default function App() {
               <Route path='/Business' element={<Business />} />
               <Route path='/Profile' element={<Profile />} />
               {/* <Route path='/More' element={<More />} /> */}
+              
             </Routes>
           </div>
           {/* END FOR CONTENT DISPLAY ROUTES  */}
