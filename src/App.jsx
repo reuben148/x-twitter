@@ -9,29 +9,43 @@ import Premium from "./pages/Premium";
 import Business from "./pages/Business";
 import Profile from "./pages/Profile";
 import More from "./pages/More";
-import UserImage from "./assets/Akan_Leaner.jpg"
-import MobileNav from "./components/Home/MobileNav";
+import UserImage from "./assets/akan.jpg"; 
 
 
 export default function App() {
   return (
     <BrowserRouter >
-      <div className="bg-black">
+      <div className="bg-black h-[100vh] ">
 
         {/* MOBILE SCREEN NAV BAR */}
-        <div>
-            <MobileNav />
-          </div>
-          {/* END FOR MOBILE SCREEN NAV BAR */}
+        <div className="flex w-full sm:hidden h-auto items-center p-3 justify-between px-4 fixed bg-black ">
+
+          {/* USER IMAGE */}
+          <Link to="/Profile" className="sm:mt-2 mt-0 w-fit sm:p-2 hover:bg-gray-900 hover:rounded-full">
+            <img src={UserImage} className="w-11 h-11 rounded-full" />
+          </Link>
+
+          {/* X LOGO */}
+          <Link to="/" className="sm:mt-2 mt-0 w-fit sm:p-2 hover:bg-gray-900 hover:rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-9 h-9 text-white" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+            </svg>
+          </Link>
+
+          {/* UPGRADE PREMIUM */}
+          <Link to="/Premium" className="sm:mt-2 mt-0 w-fit sm:p-2 text-white hover:bg-gray-900 hover:rounded-full">
+            <span className="px-3 font-bold py-1 border-1 border-white rounded-full">Upgrade</span>
+          </Link>
+
+        </div>
+        {/* END FOR MOBILE SCREEN NAV BAR */}
 
         {/* WRAPING CONTAINER THAT HOLDS THE LEFT NAV BAR AND CONTENT DISPLAY */}
-        <div className="bg-black flex md:w-[90%] sm:w-[95%] m-auto  ">
-
-          
+        <div className="bg-black flex md:w-[90%] sm:w-[95%] m-auto ">
 
           {/* LEFT NAV BAR */}
-          <div className="w-full sm:w-[10%] md:w-[20%] bg-black text-white h-auto sm:h-[100vh] 
-                          fixed bottom-0 sm:static 
+          <div className="w-full p-2 sm:w-[10%] md:w-[20%] bg-black text-white h-auto sm:h-[100vh] 
+                          fixed bottom-0 sm:static
                           flex sm:flex-col justify-around sm:justify-start 
                           border-t border-gray-800 sm:border-none sm:gap-1"
           >
@@ -66,6 +80,17 @@ export default function App() {
             </Link>
             {/* EXPLORE FOR HOME ICON */}
 
+            {/* GROK ICON ON MOBILE DEVICE*/}
+            <Link to="/Grok" className="w-fit block sm:hidden">
+              <div className="flex items-center p-2 gap-3 pr-3 text-[20px] hover:bg-blend-normal hover:rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-7 h-7 text-white" aria-hidden="true">
+                  <path d="M2.205 7.423L11.745 21h4.241L6.446 7.423H2.204zm4.237 7.541L2.2 21h4.243l2.12-3.017-2.121-3.02zM16.957 0L9.624 10.435l2.122 3.02L21.2 0h-4.243zm.767 6.456V21H21.2V1.51l-3.476 4.946z"></path>
+                </svg>
+                <span className="md:block hidden" >Grok</span>
+              </div>
+            </Link>
+            {/* END FOR GROK ICON ON MOBILE DEVICE */}
+
             {/* NOTIFICATION ICON */}
             <Link to="/Notifications" className="w-fit block">
               <div className="flex items-center p-2 gap-3 pr-3 text-[20px] hover:bg-blend-normal hover:rounded-full">
@@ -88,8 +113,8 @@ export default function App() {
             </Link>
             {/* END FOR MESSAGES ICON */}
 
-            {/* GROK ICON */}
-            <Link to="/Grok" className="w-fit block">
+            {/* GROK ICON ON LARGE SCREEN */}
+            <Link to="/Grok" className="w-fit sm:block hidden">
               <div className="flex items-center p-2 gap-3 pr-3 text-[20px] hover:bg-blend-normal hover:rounded-full">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-7 h-7 text-white" aria-hidden="true">
                   <path d="M2.205 7.423L11.745 21h4.241L6.446 7.423H2.204zm4.237 7.541L2.2 21h4.243l2.12-3.017-2.121-3.02zM16.957 0L9.624 10.435l2.122 3.02L21.2 0h-4.243zm.767 6.456V21H21.2V1.51l-3.476 4.946z"></path>
@@ -97,7 +122,7 @@ export default function App() {
                 <span className="md:block hidden" >Grok</span>
               </div>
             </Link>
-            {/* END FOR GROK ICON */}
+            {/* END FOR GROK ICON ON LARGE SCREEN */}
 
             {/* COMMUNITY ICON */}
             <Link to="/Communities" className="w-fit block">
@@ -188,7 +213,7 @@ export default function App() {
           {/* END FOR LEFT NAV BAR */}
 
           {/* CONTENT DISPLAY */}
-          <div className="w-full md:w-[80%] bg-black h-screen flex-grow text-white">
+          <div className="w-full md:w-[80%] bg-black h-[100vh] flex-grow text-white">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path='/Explore' element={<Explore />} />
