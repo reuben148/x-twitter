@@ -1,33 +1,42 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import ForYou from "../components/Home/ForYou";
+
+
+
 
 export default function Home() {
 
   return (
-    
+
     <div className=' border-gray-600 h-[100vh] flex overflow-auto  no-scrollbar '>
-      <div>
-       <Link to='ForYou'>For you</Link>
-      </div>
+
       {/* MIDDLE HOME FOR CONTENT */}
-      <div className='h-fit w-[60%] bg-green-200 '>
-       
-          
-        <Routes>
-        <Route path='ForYou' element={<ForYou />} />
-        </Routes>
-      
+      <div className=' fd:w-[60%] w-full text-white border-x-1 border-gray-800 h-[1000px]  '>
+
+        {/* TOP NAV BAR ON MIDDLE CONTENT */}
+        
+        <div className="flex font-medium  sm:mt-0 mt-[68px] border-b-1 border-gray-800 ">
+          <Link to='/' className="p-4 px-7 hover:bg-gray-900 border-b-4 border-blue-500 w-fit font-bold"> For you </Link>
+          <Link to='/' className="p-4 hover:bg-gray-900 text-gray-500 "> Following </Link>
+          <Link to='/' className="p-4 hover:bg-gray-900 text-gray-500 "> Developer/Designers Learning </Link>
+        </div>
+    
+        {/* END |FOR TOP NAV BAR ON MIDDLE CONTENT */}
+
+        <div>
+          <ForYou/>
+        </div>
 
       </div>
       {/* END FOR MIDDLE HOME FOR CONTENT */}
 
-      <div className='bg-green-700 w-[40%]'>
-       
+      <div className='bg-green-700 w-[40%] fd:block hidden'>
+
       </div>
 
 
     </div>
-    
+
 
   )
 }
