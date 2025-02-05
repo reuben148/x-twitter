@@ -11,7 +11,7 @@ export default function Home() {
     <div className=' border-gray-600 h-[100vh] flex overflow-auto  no-scrollbar '>
 
       {/* MIDDLE HOME FOR CONTENT */}
-      <div className=' fd:w-[60%] w-full text-white border-x-1 border-gray-800 h-[1000px]  '>
+      <div className=' fd:w-[60%] w-full text-white border-x-1 border-gray-800  '>
 
         {/* TOP NAV BAR ON MIDDLE CONTENT */}
         
@@ -30,7 +30,7 @@ export default function Home() {
       </div>
       {/* END FOR MIDDLE HOME FOR CONTENT */}
 
-      <div className='bg-green-700 w-[40%] fd:block hidden'>
+      <div className='w-[40%] fd:block hidden'>
 
       </div>
 
