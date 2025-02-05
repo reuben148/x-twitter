@@ -4,7 +4,7 @@ import UsersPost from './UsersPost'
 
 export default function ForYou() {
   return (
-    <div className=' text-white'>
+    <div className=' text-white h-auto'>
       <Post/>
       <UsersPost/>
     </div>
