@@ -1,9 +1,11 @@
-import React from 'react'
+import SubToPremium from './SubToPremium';
+import WhatsHappening from './WhatsHappening';
 
 export default function RightNav() {
   return (
     <div>
-     <h1>Hello</h1>
+     <SubToPremium/>
+     <WhatsHappening/> 
     </div>
   )
 }
