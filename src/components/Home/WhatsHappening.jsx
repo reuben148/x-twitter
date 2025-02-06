@@ -48,7 +48,7 @@ export default function WhatsHappening() {
 
                 </div>
 
-                <h1 className="font-bold">#Tweetle</h1>
+                <h1 className="font-bold">#Tweeqle</h1>
                 <h1 className="text-gray-500 text-sm">135k posts</h1>
 
             </div>

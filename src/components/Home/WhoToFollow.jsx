@@ -8,24 +8,29 @@ export default function WhoToFollow() {
     <h5 className="font-extrabold text-2xl p-5">Who to follow</h5>
 
     {/* CONTENT */}
-    <div className="p-3 px-5 hover:bg-gray-950">
+    <div className="p-3 px-5 hover:bg-gray-950 flex">
 
-        <div className="flex items-center justify-between">
+        <div className="w-[15%]">
+            <img src="/akan.jpg" className="rounded-full" />
+        </div>
+
+        <div className="w-[85%] flex justify-between pl-2 items-center ">
+
             <div>
-                <h1 className="text-gray-500 text-sm">Trending in Nigeria</h1>
+            <h1 className="font-bold">Mano Dav</h1>
+            <h1 className="text-gray-500 text-sm">Trending in Niger</h1>
             </div>
 
-            {/* DOTTED ICON */}
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-gray-500 hover:bg-gray-700 hover:text-blue-500 hover:rounded-full " aria-hidden="true">
-                    <path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path>
-                </svg>
-            </div>
-            {/* END FOR DOTTED ICON */}
+            <button className="bg-blue-500 px-4 py-2 rounded-2xl font-medium">Follow</button>
+
 
         </div>
 
-        <h1 className="font-bold">#Manoah</h1>
+
+
+         
+      
+        
 
     </div>
     {/* END FOR CONTENT */}

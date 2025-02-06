@@ -15,9 +15,9 @@ export default function Home() {
         {/* TOP NAV BAR ON MIDDLE CONTENT */}
         
         <div className="flex font-medium  sm:mt-0 mt-[68px] border-b-1 border-gray-800 ">
-          <Link to='/' className="p-4 px-7 hover:bg-gray-900 border-b-4 border-blue-500 w-fit font-bold"> For you </Link>
-          <Link to='/' className="p-4 hover:bg-gray-900 text-gray-500 "> Following </Link>
-          <Link to='/' className="p-4 hover:bg-gray-900 text-gray-500 "> Developer/Designers Learning </Link>
+          <Link to='/' className="p-4 px-7 hover:bg-gray-950 border-b-4 border-blue-500 w-fit font-bold"> For you </Link>
+          <Link to='/' className="p-4 hover:bg-gray-950 text-gray-500 "> Following </Link>
+          <Link to='/' className="p-4 hover:bg-gray-950 text-gray-500 "> Developer/Designers Learning </Link>
         </div>
     
         {/* END |FOR TOP NAV BAR ON MIDDLE CONTENT */}
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
 
       </div>
-      {/* END FOR MIDDLE HOME FOR CONTENT */}
+      {/* END FOR MIDDLE HOME FOR CONTENT */} 
 
       <div className='w-[40%] fd:block hidden pl-8'>
 
