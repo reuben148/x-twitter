@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export default function Terms() {
   return (
-    <div className="mt-4 pb-7">
+    <div className="mt-4 pb-7 pl-2">
 
       <div className="flex text-gray-600 gap-2">
         <Link to='/'>Terms of Service</Link>
