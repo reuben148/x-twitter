@@ -14,7 +14,7 @@ export default function Home() {
 
         {/* TOP NAV BAR ON MIDDLE CONTENT */}
         
-        <div className="flex font-medium  sm:mt-0 mt-[68px] border-b-1 border-gray-800 ">
+        <div className="flex font-medium  sm:mt-0 mt-[68px] border-b-1 border-gray-800 bg-red-600 ">
           <Link to='/' className="p-4 px-7 hover:bg-gray-950 border-b-4 border-blue-500 w-fit font-bold"> For you </Link>
           <Link to='/' className="p-4 hover:bg-gray-950 text-gray-500 "> Following </Link>
           <Link to='/' className="p-4 hover:bg-gray-950 text-gray-500 "> Developer/Designers Learning </Link>
