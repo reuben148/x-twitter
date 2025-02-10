@@ -11,7 +11,7 @@ export default function WhoToFollow() {
       <div className="p-3 px-5 hover:bg-gray-950 flex">
 
         <div className="w-[14%]">
-          <img src="/akan.jpg" className="rounded-full" />
+          <img src="/mano.jpg" className="rounded-full" />
         </div>
 
         <div className="w-[85%] flex justify-between pl-2 items-center ">
@@ -46,7 +46,7 @@ export default function WhoToFollow() {
         <div className="w-[85%] flex justify-between pl-2 items-center ">
 
           <div>
-            
+
             <h1 className="font-bold flex gap-1">Akan
               {/* VERIFIED ICON */}
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-blue-500 mt-1 items-center" aria-hidden="true">
@@ -70,7 +70,7 @@ export default function WhoToFollow() {
       <div className="p-3 px-5 hover:bg-gray-950 flex">
 
         <div className="w-[14%]">
-          <img src="/akan.jpg" className="rounded-full" />
+          <img src="/jaytee.jpg" className="rounded-full" />
         </div>
 
         <div className="w-[85%] flex justify-between pl-2 items-center ">
