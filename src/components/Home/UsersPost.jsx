@@ -55,7 +55,7 @@ export default function UsersPost() {
           <p>Click the link and join the waitlist to be a part of our next Cohort! 🚀
           <a href="https://web3bridgeafrica.com/register" className="text-blue-500">web3bridgeafrica.com/register</a></p>
 
-          <p className="text-blue-500"> #Web3Bridge #JoinTheCommunity </p>
+          <p className="text-blue-500"> #Web3Bridge #JoinTheCommunity #Web3 </p>
           
         </div>
 
