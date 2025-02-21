@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import PostIcons from "./PostIcons"
 
 export default function Post() {
   return (
@@ -24,9 +25,7 @@ export default function Post() {
 
             {/* ICONS */}
             <div>
-              <div>
-              
-              </div>
+              <PostIcons/>
             </div>
             {/* END FOR ICONS */} 
             

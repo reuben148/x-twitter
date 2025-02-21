@@ -4,7 +4,7 @@ export default function SubToPremium() {
   return (
     <div className="w-[95%] border-1 border-gray-800 rounded-2xl p-3 px-5 mt-16 gap-y-5 ">
 
-      <h5 className="font-extrabold text-xl mb-3">Subscribe to Premium</h5>
+      <h5 className="font-extrabold text-xl mb-3"> Subscribe to Premium </h5> 
 
       <p className="text-lg font-normal">Subscribe to unlock new features and if eligible, receive a share of revenue.</p>
 

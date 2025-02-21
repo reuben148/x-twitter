@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import UserReactions from "./UserReactions"
 
 export default function UsersPost() {
   return (
@@ -65,7 +66,10 @@ export default function UsersPost() {
 
         {/* COMMENT  AND REACTION SECTION */}
         <div>
-
+          <div>
+            <UserReactions/>
+          </div>
+          
         </div>
         {/* END FOR COMMENT AND REACTION SECTION */}
 
