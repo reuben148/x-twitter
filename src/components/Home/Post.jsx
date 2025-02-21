@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export default function Post() {
   return (
-    <div className='flex p-3 py-4 gap-2 border-b-1 border-gray-900  '>
+    <div className='flex p-3 py-4 gap-2 border-b-1 border-gray-900 mt-16  '>
 
       <div className="w-[10%] items-end">
         <Link to='/Profile'>
