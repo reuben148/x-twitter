@@ -215,6 +215,7 @@ export default function App() {
           {/* CONTENT DISPLAY */}
           <div className="w-full md:w-[80%] bg-black h-[100vh] flex-grow text-white">
             <Routes>
+              
               <Route path="/" element={<Home />} />              
               <Route path='/Explore' element={<Explore />} />
               <Route path='/Notifications' element={<Notifications />} />
