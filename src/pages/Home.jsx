@@ -7,14 +7,14 @@ export default function Home() {
 
   return (
 
-    <div className=' border-gray-600 h-[100vh] flex overflow-auto  no-scrollbar '>
+    <div className=' border-gray-600 h-[100vh] flex overflow-auto  no-scrollbar sticky '>
 
       {/* MIDDLE HOME FOR CONTENT */}
-      <div className=' fd:w-[60%] h-auto w-full text-white  '>
+      <div className=' fd:w-[60%] h-auto w-full text-white overflow-y-auto relative no-scrollbar '>
 
         {/* TOP NAV BAR ON MIDDLE CONTENT */}
         
-        <div className="flex font-medium  sm:mt-0 mt-[68px] bg-black fixed top-0 z-0 w-full text-[12px] sm:text-lg  ">
+        <div className="flex font-medium  sm:mt-0 mt-[68px] bg-black sticky top-0 z-10 w-full text-[12px] sm:text-lg  ">
           <Link to='/' className="p-4 px-7 hover:bg-gray-950 border-b-4 border-blue-500 w-fit font-bold"> For you </Link>
           <Link to='/' className="p-4 hover:bg-gray-950 text-gray-500 "> Following </Link>
           <Link to='/' className="p-4 hover:bg-gray-950 text-gray-500 "> Developer/Designers Learning </Link>
@@ -29,10 +29,10 @@ export default function Home() {
       </div>
       {/* END FOR MIDDLE HOME FOR CONTENT */} 
 
-      <div className='w-[40%] fd:block hidden pl-8 '>
+      <div className='w-[40%] fd:block hidden pl-8 overflow-y-auto relative no-scrollbar '>
 
         {/* SEARCH SECTION */}
-        <div className="top-0 fixed w-[26.5%] ">
+        <div className="top-0  fixed w-[26.5%] bg-black ">
 
           <div className=" relative mt-3  ">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none ">

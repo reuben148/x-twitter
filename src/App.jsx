@@ -47,7 +47,7 @@ export default function App() {
           <div className="w-full p-2 sm:w-[10%] md:w-[20%] bg-black text-white h-auto sm:h-[100vh] 
                           fixed bottom-0 sm:static
                           flex sm:flex-col justify-around sm:justify-start 
-                          border-t border-gray-800 sm:border-none sm:gap-1"
+                          border-t border-gray-800 sm:border-none sm:gap-1 z-10"
           >
 
             {/* X HEADING ICON */}

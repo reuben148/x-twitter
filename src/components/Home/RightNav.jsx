@@ -6,7 +6,7 @@ import WhoToFollow from './WhoToFollow';
 
 export default function RightNav() {
   return (
-    <div>
+    <div className=''>
      <SubToPremium/>
      <WhatsHappening/> 
      <WhoToFollow/>
