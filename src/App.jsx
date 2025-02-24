@@ -15,7 +15,7 @@ import UserImage from "./assets/akan.jpg";
 export default function App() {
   return (
     <BrowserRouter >
-      <div className="bg-black h-[100vh] ">
+      <div className="bg-black h-[100vh]  ">
 
         {/* MOBILE SCREEN NAV BAR */}
         <div className="flex w-full sm:hidden h-auto items-center p-3 justify-between px-4 fixed bg-black ">
@@ -41,7 +41,7 @@ export default function App() {
         {/* END FOR MOBILE SCREEN NAV BAR */}
 
         {/* WRAPING CONTAINER THAT HOLDS THE LEFT NAV BAR AND CONTENT DISPLAY */}
-        <div className="bg-black flex md:w-[90%] sm:w-[95%] m-auto ">
+        <div className="bg-black flex md:w-[90%] sm:w-[95%] m-auto  ">
 
           {/* LEFT NAV BAR */}
           <div className="w-full p-2 sm:w-[10%] md:w-[20%] bg-black text-white h-auto sm:h-[100vh] 
@@ -213,9 +213,9 @@ export default function App() {
           {/* END FOR LEFT NAV BAR */}
 
           {/* CONTENT DISPLAY */}
-          <div className="w-full md:w-[80%] bg-black h-[100vh] flex-grow text-white">
+          <div className="w-full md:w-[80%] bg-black h-[100vh] flex-grow text-white border-gray-800 border-l-1">
             <Routes>
-              
+
               <Route path="/" element={<Home />} />              
               <Route path='/Explore' element={<Explore />} />
               <Route path='/Notifications' element={<Notifications />} />

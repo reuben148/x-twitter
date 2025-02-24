@@ -10,17 +10,17 @@ export default function Home() {
     <div className=' border-gray-600 h-[100vh] flex overflow-auto  no-scrollbar '>
 
       {/* MIDDLE HOME FOR CONTENT */}
-      <div className=' fd:w-[60%] h-auto w-full text-white border-x-1 border-gray-800  '>
+      <div className=' fd:w-[60%] h-auto w-full text-white  '>
 
         {/* TOP NAV BAR ON MIDDLE CONTENT */}
         
-        <div className="flex font-medium  sm:mt-0 mt-[68px] bg-black fixed top-0 z-0 w-full ">
+        <div className="flex font-medium  sm:mt-0 mt-[68px] bg-black fixed top-0 z-0 w-full text-[12px] sm:text-lg  ">
           <Link to='/' className="p-4 px-7 hover:bg-gray-950 border-b-4 border-blue-500 w-fit font-bold"> For you </Link>
           <Link to='/' className="p-4 hover:bg-gray-950 text-gray-500 "> Following </Link>
           <Link to='/' className="p-4 hover:bg-gray-950 text-gray-500 "> Developer/Designers Learning </Link>
         </div>
     
-        {/* END |FOR TOP NAV BAR ON MIDDLE CONTENT */}
+        {/* END FOR TOP NAV BAR ON MIDDLE CONTENT */}
 
         <div className="h-auto">
           <ForYou/>
