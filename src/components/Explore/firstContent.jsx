@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function testing() {
+export default function firstContent() {
   return (
     <div>
-      
+      <img src=""  />
     </div>
   )
 }
