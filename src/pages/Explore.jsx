@@ -5,6 +5,10 @@ import Search from "./Search";
 import SubToPremium from "../components/Home/SubToPremium";
 import FirstContent from "../components/Explore/firstContent";
 import TodaysNews from "../components/Explore/TodaysNews";
+import WhatsHappening from "../components/Home/WhatsHappening";
+import ExploreWhatsHappening from "../components/Explore/ExploreWhatsHappening";
+import ExploreWhoToFollow from "../components/Explore/ExploreWhoToFollow";
+import UsersPost from "../components/Home/UsersPost";
 
 export default function Explore() {
   return (
@@ -61,6 +65,9 @@ export default function Explore() {
         <div className=" ">
           <FirstContent/>
           <TodaysNews/>
+          <ExploreWhatsHappening/>
+          <ExploreWhoToFollow/>
+          <UsersPost/>
         </div>
 
     </div>

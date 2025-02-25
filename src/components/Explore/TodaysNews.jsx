@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function TodaysNews() {
   return (
-    <div className='border-b-2 border-gray-900 mb-10'>
+    <div className='border-b-2 border-gray-900 mb-2'>
 
       <h1 className='text-xl font-extrabold px-4 mt-3.5 mb-2'>Today's News</h1>
 
