@@ -4,6 +4,7 @@ import WhoToFollow from "../components/Home/WhoToFollow";
 import Search from "./Search";
 import SubToPremium from "../components/Home/SubToPremium";
 import FirstContent from "../components/Explore/firstContent";
+import TodaysNews from "../components/Explore/TodaysNews";
 
 export default function Explore() {
   return (
@@ -59,6 +60,7 @@ export default function Explore() {
         {/* MIDLE CONTENT */}
         <div className=" ">
           <FirstContent/>
+          <TodaysNews/>
         </div>
 
     </div>
