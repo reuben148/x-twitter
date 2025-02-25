@@ -3,6 +3,7 @@ import Terms from "../components/Home/Terms";
 import WhoToFollow from "../components/Home/WhoToFollow";
 import Search from "./Search";
 import SubToPremium from "../components/Home/SubToPremium";
+import FirstContent from "../components/Explore/firstContent";
 
 export default function Explore() {
   return (
@@ -57,8 +58,7 @@ export default function Explore() {
 
         {/* MIDLE CONTENT */}
         <div className=" ">
-          
-                     
+          <FirstContent/>
         </div>
 
     </div>
