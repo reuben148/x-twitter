@@ -5,6 +5,7 @@ import WhoToFollow from "../components/Home/WhoToFollow"
 import ExploreWhatsHappening from "../components/Explore/ExploreWhatsHappening"
 import WhatsHappening from "../components/Home/WhatsHappening"
 import ProfileDetails from "../components/Profile/ProfileDetails"
+import ProfilePostDetails from "../components/Profile/ProfilePostDetails"
 
 
 export default function Profile() {
@@ -41,7 +42,7 @@ export default function Profile() {
         <div className=" ">
 
           {/* COVER PHOTOT */}
-          <img src="/exploreCover.jpg" className="w-full h-[220px] cursor-pointer" />
+          <img src="/exploreCover.jpg" className="w-full h-[190px] -mt-28 sm:-mt-11 cursor-pointer" />
 
           <div className="px-3 -mt-16">
 
@@ -49,7 +50,7 @@ export default function Profile() {
             <div className="flex justify-between items-center ">
 
               {/* Profile Image */}
-              <img src="/akan.jpg" className="w-[130px] h-[130px] rounded-full cursor-pointer border-4 border-black " />
+              <img src="/akan.jpg" className="sm:w-[130px] w-[120px] sm:h-[130px] h-[120px]  rounded-full cursor-pointer border-4 border-black " />
 
               {/* Grok and Edit Button profile */}
               <div className="flex items-center gap-3 mt-14 ">
@@ -73,12 +74,16 @@ export default function Profile() {
             {/* PROFILE CONTENT SECTION */}
             <div>
               <ProfileDetails/>
+              
             </div>
             {/* END FOR PROFILE CONTENT SECTION */}
 
           </div>
 
+      
         </div>
+
+        <ProfilePostDetails/>
 
       </div>
       {/* END FOR MIDDLE FOR EXPLORE */}
