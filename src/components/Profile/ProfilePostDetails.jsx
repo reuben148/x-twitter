@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ProfilePostOne from './ProfilePostOne'
+import ProfilePostTwo from './ProfilePostTwo'
 
 export default function ProfilePostDetails() {
   return (
@@ -55,7 +57,8 @@ export default function ProfilePostDetails() {
 
         {/* CONTENT */}
         <div>
-
+            <ProfilePostOne/>
+            <ProfilePostTwo/>
         </div>
         {/* END FOR CONTENT */}
       
