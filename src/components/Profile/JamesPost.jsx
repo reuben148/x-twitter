@@ -22,10 +22,10 @@ export default function JamesPost() {
                 <div className="sm:w-[90%] w-[85%]">
 
                     {/* USER DETAILS */}
-                    <div className="justify-between items-center flex sm:text-lg text-sm">
+                    <div className="justify-between items-center flex sm:text-lg text-[12px] ">
 
                         <div className="flex gap-1 items-center">
-                            <Link to='/Profile'><h1 className="font-extrabold text-lg">James </h1></Link>
+                            <Link to='/Profile'><h1 className="font-extrabold">James </h1></Link>
 
                             {/* VERIFIED ICON */}
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-blue-500 mt-1 items-center" aria-hidden="true">
@@ -33,13 +33,13 @@ export default function JamesPost() {
                             </svg>
                             {/* END FOR VERIFIED ICON */}
 
-                            <p className="font-light text-gray-400 text-lg">@CodeX_James</p>
+                            <p className="font-light text-gray-400">@CodeX_James</p>
                             <p className="text-gray-400 -mt-2 font-bold">.</p>
                             <p className="font-light text-gray-400">Dec 10, 2024</p>
                         </div>
 
                         {/* DOTTED ICON */}
-                        <div>
+                        <div className='sm:block hidden'>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-gray-400 hover:bg-gray-700 hover:text-blue-500 hover:rounded-full " aria-hidden="true">
                                 <path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path>
                             </svg>
@@ -53,14 +53,14 @@ export default function JamesPost() {
                     {/* POST WRITE-UP */}
                     <div className="w-full space-y-4 text-[15px] font-semibold mt-0.5 ">
 
-                        <p className=' '>I am super excited as my team and I came first in the in-house Web2 Hackathon, Thanks to my team mate
+                        <p className='sm:text-sm text-[12px] '>I am super excited as my team and I came first in the in-house Web2 Hackathon, Thanks to my team mate
                             <a href="https://web3bridgeafrica.com/register" className="text-blue-500 px-1.5">@codeX_james</a>
 
                         </p>
 
                     </div>
 
-                    <img src="/web3bridge.jpg" className="rounded-2xl mt-3" />
+                    <img src="/tweetle.png" className="rounded-2xl mt-3" />
                     {/* END FOR POST WRITE-UP */}
 
 

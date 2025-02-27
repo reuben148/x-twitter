@@ -18,7 +18,7 @@ export default function UserReactions() {
     };
 
     return (
-        <div className="mt-3">
+        <div className="my-3">
 
             <div className="flex items-center justify-between ">
 

@@ -59,7 +59,7 @@ export default function ProfilePostOne() {
 
 
                     {/* POST WRITE-UP */}
-                    <div className="w-full space-y-4 text-[15px] font-semibold mt-0.5 ">
+                    <div className="w-full space-y-4 text-[18px] font-semibold mt-0.5 ">
 
                         <p className=' '>I am super excited as my team and I came first in the in-house Web2 Hackathon, Thanks to my team mate
                             <a href="https://web3bridgeafrica.com/register" className="text-blue-500 px-1.5">@codeX_james</a>

@@ -56,11 +56,13 @@ export default function Profile() {
               <div className="flex items-center gap-3 mt-14 ">
 
                 {/* Grok Icon */}
+                <Link to='/Grok'>
                 <div className="border-2 border-gray-800 p-2 w-fit h-fit rounded-full cursor-pointer">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-white" aria-hidden="true">
                     <path d="M2.205 7.423L11.745 21h4.241L6.446 7.423H2.204zm4.237 7.541L2.2 21h4.243l2.12-3.017-2.121-3.02zM16.957 0L9.624 10.435l2.122 3.02L21.2 0h-4.243zm.767 6.456V21H21.2V1.51l-3.476 4.946z"></path>
                   </svg>
                 </div>
+                </Link>
 
                 {/* Edit Profile Button */}
                 <button className="font-medium cursor-pointer text-[16px] border-2 border-gray-800 rounded-4xl px-3.5 py-1">Edit profile</button>
