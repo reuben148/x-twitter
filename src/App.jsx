@@ -11,6 +11,7 @@ import Profile from "./pages/Profile";
 import More from "./pages/More";
 import UserImage from "./assets/akan.jpg";
 import UserMessageOne from "./components/Messages/UserMessageOne";
+import UserMessageTwo from "./components/Messages/UserMessageTwo";
 
 
 export default function App() {
@@ -222,7 +223,7 @@ export default function App() {
               <Route path='/Notifications' element={<Notifications />} />
               <Route path='/Messages' element={<Messages />}>
                 <Route path='UserMessageOne' element={<UserMessageOne />} />
-                
+                <Route path='UserMessageTwo' element={<UserMessageTwo />} />
               </Route>
               <Route path='/Grok' element={<Grok />} />
               <Route path='/Communities' element={<Communities />} />

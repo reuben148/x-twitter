@@ -29,7 +29,7 @@ export default function Messages() {
         }`}
       >
         {/* ... (Your message list content) ... */}
-        <nav className=" h-auto sticky top-0 z-10  bg-black ">
+        <nav className=" h-auto sticky top-0 z-10  bg-black border-b-2 border-gray-800 ">
           <div className="flex justify-between w-full h-auto p-4 items-center">
             <h1 className='font-bold text-xl'>Messages</h1>
             
@@ -57,7 +57,23 @@ export default function Messages() {
         <div className=" ">
 
           <Link to='UserMessageOne' onClick={() => handleMessageClick('UserMessageOne')}>
-            <div>Hello (User 1)</div>
+            <div className='flex p-4 items-center gap-2.5 hover:bg-gray-950'>
+
+              <div>
+                <img src="/mano.jpg" className='w-12 h-12 rounded-full' />
+              </div>
+
+              <div >
+                <h1 className='flex font-bold gap-1.5 text-[16px]'>Mano.dev 🐺 <p className='font-normal text-gray-500 '>@manoahluka Feb 14</p> </h1>
+                <p className='font-medium -mt-1'>Updated the project* Boss</p>
+              </div>
+
+            </div>
+          </Link>
+
+          
+          <Link to='UserMessageTwo' onClick={() => handleMessageClick('UserMessageTwo')}>
+            <div>Hello (User 2)</div>
           </Link>
 
         </div>
