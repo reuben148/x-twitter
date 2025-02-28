@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import ProfilePostOne from './ProfilePostOne'
 import ProfilePostTwo from './ProfilePostTwo'
+import ManoPost from './ManoPost'
+import JamesPost from './JamesPost'
 
 export default function ProfilePostDetails() {
   return (
@@ -58,7 +60,13 @@ export default function ProfilePostDetails() {
         {/* CONTENT */}
         <div>
             <ProfilePostOne/>
+            {/* <ManoPost/> */}
             <ProfilePostTwo/>
+            <ManoPost/>
+            <div className='mb-16'>
+                <JamesPost/>
+            </div>
+            
         </div>
         {/* END FOR CONTENT */}
       

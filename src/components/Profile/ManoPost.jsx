@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import UserReactions from '../Home/UserReactions'
 
-export default function ProfilePostTwo() {
-    return (
-        <div>
-            <div className='flex items-center px-4 text-gray-500 my-1.5 pl-7 font-bold '>
+export default function ManoPost() {
+  return (
+    <div>
+           <div className='flex items-center px-4 text-gray-500 my-1.5 pl-7 font-bold '>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 items-center" aria-hidden="true">
                     <path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path>
                 </svg>
@@ -17,7 +17,7 @@ export default function ProfilePostTwo() {
                 {/* IMAGE OF THE USER */}
                 <div className="sm:w-[10%] w-[15%] items-end">
                     <Link to='/Profile'>
-                        <img src='/custos.jpg' className='sm:w-11 w-9 sm:h-11 h-9 rounded-full' />
+                        <img src='/mano.jpg' className='sm:w-11 w-9 sm:h-11 h-9 rounded-full' />
                     </Link>
 
                 </div>
@@ -31,11 +31,11 @@ export default function ProfilePostTwo() {
                     <div className="justify-between items-center flex sm:text-lg text-sm">
 
                         <div className="flex gap-1 items-center">
-                            <Link to='/Profile'><h1 className="font-bold text-lg">Custos Diretriz </h1></Link>
+                            <Link to='/Profile'><h1 className="font-bold text-lg">Mano.dev </h1></Link>
 
-                            <p className="font-light text-gray-400 text-lg">@custosdiretriz</p>
+                            <p className="font-light text-gray-400 text-lg">@manoahluka</p>
                             <p className="text-gray-400 -mt-2 font-bold">.</p>
-                            <p className="font-light text-gray-400">Feb 24</p>
+                            <p className="font-light text-gray-400">Feb 21</p>
                         </div>
 
                         {/* DOTTED ICON */}
@@ -51,15 +51,13 @@ export default function ProfilePostTwo() {
 
 
                     {/* POST WRITE-UP */}
-                    <div className="w-full space-y-4 text-[15px] font-semibold mt-0.5 ">
-
-                        <p className=' '>We are live at <a href="http://custosdiretriz.com" className="text-blue-500 px-1.5 text-lg">custosdiretriz.com</a> ! <br />
-                        Custos is free to use.                     
-                        </p>
+                    <div className="w-full space-y-2 text-[17px] font-semibold mt-0.5 ">
+                    <p className='text-gray-500 '>Replying to <Link to='/Profile' className='text-blue-500'>@teke57</Link></p>
+                        <p className=' '>When everywhere is silent.  That’s when to right code not cry 😭.</p>
 
                     </div>
 
-                    <img src="/custos.jpg" className="rounded-2xl mt-3" />
+                    {/* <img src="/custos.jpg" className="rounded-2xl mt-3" /> */}
                     {/* END FOR POST WRITE-UP */}
 
 
@@ -76,6 +74,6 @@ export default function ProfilePostTwo() {
                 {/* END FOR USER POST CONTAINER */}
 
             </div>
-        </div>
-    )
+    </div>
+  )
 }

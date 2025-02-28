@@ -4,17 +4,23 @@ import Search from './Search'
 import WhoToFollow from '../components/Home/WhoToFollow'
 import WhatsHappening from '../components/Home/WhatsHappening'
 import Terms from '../components/Home/Terms'
+import NotificationsContent from '../components/Notifications/NotificationsContent'
+import NotificationPostOne from '../components/Notifications/NotificationPostOne'
+import NoitificationPostTwo from '../components/Notifications/NoitificationPostTwo'
+import NotificationPostThree from '../components/Notifications/NotificationPostThree'
+import NotificationPostFour from '../components/Notifications/NotificationPostFour'
+import NotificationPostFive from '../components/Notifications/NotificationPostFive'
 
 export default function Notifications() {
   return (
     <div className='flex h-[100vh] w-full '>
 
       {/* MIDDLE FOR EXPLORE */}
-      <div className=" w-full md:w-[60%] overflow-y-auto relative no-scrollbar border-r-2 border-gray-900">
+      <div className=" w-full md:w-[60%] overflow-y-auto relative no-scrollbar border-r-2 border-gray-800">
 
-        <nav className=" h-auto sticky top-0 z-10 p-2 border-b-2 border-gray-900 ">
+        <nav className=" h-auto sticky top-0 z-10  bg-black ">
 
-        <div className="flex justify-between w-full h-auto p-2 items-center">
+        <div className="flex justify-between w-full h-auto p-4 items-center">
               <h1 className='font-bold text-xl'>Notifications</h1>
 
               <Link to='/Notifications'>
@@ -25,12 +31,22 @@ export default function Notifications() {
 
             </div>
 
+            <NotificationsContent/>
+            
+
         </nav>
 
         {/* CONTENT */}
-        <div className=" pt-16">
-
-
+        <div className=" ">
+           <NotificationPostOne/>
+           <NoitificationPostTwo/>
+           <NotificationPostThree/>
+           <NotificationPostFour/>
+           <NotificationPostFive/>
+           <NoitificationPostTwo/>
+           <NotificationPostThree/>
+           <NotificationPostFour/>
+           <NotificationPostFive/>
         </div>
 
       </div>
@@ -38,7 +54,7 @@ export default function Notifications() {
 
 
       {/* RIGHT SIDE BAR */}
-      <div className=" w-full md:w-[40%] overflow-y-auto relative no-scrollbar pl-6">
+      <div className=" w-full md:w-[40%] md:block hidden overflow-y-auto relative no-scrollbar pl-6">
 
         <nav className=" h-auto sticky top-0 z-10 bg-black ">
 
