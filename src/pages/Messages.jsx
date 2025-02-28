@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Routes, Route, Link, Outlet, useNavigate } from 'react-router-dom';
 import UserMessageOne from '../components/Messages/UserMessageOne';
 import { useMediaQuery } from 'react-responsive';
+import ManoMessage from '../components/Messages/ManoMessage';
+import ReubenMessage from '../components/Messages/ReubenMessage';
+import JethroMessage from '../components/Messages/JethroMessage';
 
 export default function Messages() {
   const [isMessageOpen, setIsMessageOpen] = useState(false);
@@ -57,26 +60,21 @@ export default function Messages() {
         <div className=" ">
 
           <Link to='UserMessageOne' onClick={() => handleMessageClick('UserMessageOne')}>
-            <div className='flex p-4 items-center gap-2.5 hover:bg-gray-950'>
-
-              <div>
-                <img src="/mano.jpg" className='w-12 h-12 rounded-full' />
-              </div>
-
-              <div >
-                <h1 className='flex font-bold gap-1.5 text-[16px]'>Mano.dev 🐺 <p className='font-normal text-gray-500 '>@manoahluka Feb 14</p> </h1>
-                <p className='font-medium -mt-1'>Updated the project* Boss</p>
-              </div>
-
-            </div>
+            <ManoMessage/>
           </Link>
 
           
           <Link to='UserMessageTwo' onClick={() => handleMessageClick('UserMessageTwo')}>
-            <div>Hello (User 2)</div>
+            <ReubenMessage/>
+          </Link>
+
+          
+          <Link to='UserMessageThree' onClick={() => handleMessageClick('UserMessageThree')}>
+            <JethroMessage/>
           </Link>
 
         </div>
+
       </div>
       {/* END FOR MIDDLE FOR MESSAGES LIST */}
 

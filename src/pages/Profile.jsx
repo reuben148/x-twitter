@@ -42,7 +42,7 @@ export default function Profile() {
         <div className=" ">
 
           {/* COVER PHOTOT */}
-          <img src="/exploreCover.jpg" className="w-full h-[190px] -mt-28 sm:-mt-11 cursor-pointer" />
+          <img src="/akanCover.jpg" className="w-full h-[190px] -mt-28 sm:-mt-11 cursor-pointer" />
 
           <div className="px-3 -mt-16">
 
