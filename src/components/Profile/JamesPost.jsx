@@ -5,27 +5,22 @@ export default function JamesPost() {
     return (
         <div className='border-2 border-gray-900 p-4 my-2 rounded-2xl '>
 
-            
-            <div className='flex gap-2  '>
 
-                {/* IMAGE OF THE USER */}
-                <div className="sm:w-[10%] w-[15%] items-end">
-                    <Link to='/Profile'>
-                        <img src='/mano.jpg' className='sm:w-11 w-9 sm:h-11 h-9 rounded-full' />
-                    </Link>
-
-                </div>
-                {/* END FOR THE USER IMAGE */}
-
+            <div className=' '>
 
                 {/* USER POST CONTAINER */}
-                <div className="sm:w-[90%] w-[85%]">
+                <div className="">
 
                     {/* USER DETAILS */}
-                    <div className="justify-between items-center flex sm:text-lg text-[12px] ">
+                    <div className="justify-between items-center flex sm:text-[16px] text-[12px] ">
 
                         <div className="flex gap-1 items-center">
-                            <Link to='/Profile'><h1 className="font-extrabold">James </h1></Link>
+
+                            <Link to='/Profile'>
+                                <img src='/james.jpg' className='w-8 h-8 rounded-full' />
+                            </Link>
+
+                            <Link to='/Profile'><h1 className="font-bold">James </h1></Link>
 
                             {/* VERIFIED ICON */}
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-blue-500 mt-1 items-center" aria-hidden="true">
@@ -53,14 +48,17 @@ export default function JamesPost() {
                     {/* POST WRITE-UP */}
                     <div className="w-full space-y-4 text-[15px] font-semibold mt-0.5 ">
 
-                        <p className='sm:text-sm text-[12px] '>I am super excited as my team and I came first in the in-house Web2 Hackathon, Thanks to my team mate
-                            <a href="https://web3bridgeafrica.com/register" className="text-blue-500 px-1.5">@codeX_james</a>
+                        <p className='sm:text-[15.5px] text-[12px] '>Personally, I thought I was done building with HTML, CSS,
+                            and vanilla JavaScript, not knowing that @blockfuselabs had other plans for me. Yesterday,
+                            my team and I emerged as winners of the @blockfuselabs Web2 in-house hackathon, which was
+                            an intense one-week  of collabrative work.
+                            {/* <a href="https://web3bridgeafrica.com/register" className="text-blue-500 px-1.5">@codeX_james</a> */}
 
                         </p>
 
                     </div>
 
-                    <img src="/tweetle.png" className="rounded-2xl mt-3" />
+                    <img src="/connectBanner.jpg" className="rounded-2xl mt-3" />
                     {/* END FOR POST WRITE-UP */}
 
 
