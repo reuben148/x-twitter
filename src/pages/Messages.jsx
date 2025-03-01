@@ -8,6 +8,7 @@ import JethroMessage from '../components/Messages/JethroMessage';
 
 export default function Messages() {
   const [isMessageOpen, setIsMessageOpen] = useState(false);
+  const [isMessageSelected, setIsMessageSelected] = useState(false); // New state
   const isSmallScreen = useMediaQuery({ maxWidth: 1023 });
   const navigate = useNavigate();
 
@@ -16,10 +17,12 @@ export default function Messages() {
       setIsMessageOpen(true);
       navigate(to);
     }
+    setIsMessageSelected(true); // Update state
   };
 
   const handleBack = () => {
     setIsMessageOpen(false);
+    setIsMessageSelected(false); // Reset state
     navigate('/Messages');
   };
 
@@ -27,15 +30,14 @@ export default function Messages() {
     <div className='flex h-[100vh] w-full '>
       {/* MIDDLE FOR MESSAGES LIST */}
       <div
-        className={`w-[100%] md:w-[45%] overflow-y-auto relative no-scrollbar border-r-2 border-gray-900 ${
-          isSmallScreen && isMessageOpen ? 'hidden' : ''
-        }`}
+        className={`w-[100%] md:w-[45%] overflow-y-auto relative no-scrollbar border-r-2 border-gray-900 ${isSmallScreen && isMessageOpen ? 'hidden' : ''
+          }`}
       >
         {/* ... (Your message list content) ... */}
         <nav className=" h-auto sticky top-0 z-10  bg-black border-b-2 border-gray-800 ">
           <div className="flex justify-between w-full h-auto p-4 items-center">
             <h1 className='font-bold text-xl'>Messages</h1>
-            
+
             {/* SETTINGS & MESSAGES ICON */}
             <div className='flex items-center gap-2 '>
 
@@ -60,42 +62,59 @@ export default function Messages() {
         <div className=" ">
 
           <Link to='UserMessageOne' onClick={() => handleMessageClick('UserMessageOne')}>
-            <ManoMessage/>
+            <ManoMessage />
           </Link>
 
-          
+
           <Link to='UserMessageTwo' onClick={() => handleMessageClick('UserMessageTwo')}>
-            <ReubenMessage/>
+            <ReubenMessage />
           </Link>
 
-          
+
           <Link to='UserMessageThree' onClick={() => handleMessageClick('UserMessageThree')}>
-            <JethroMessage/>
+            <JethroMessage />
           </Link>
 
         </div>
+
+
 
       </div>
       {/* END FOR MIDDLE FOR MESSAGES LIST */}
 
       {/* RIGHT SIDE BAR (Nested Route Content) */}
       <div
-        className={`w-[100%] md:w-[55%] border-r-3 border-gray-800 overflow-y-auto relative no-scrollbar ${
-          isSmallScreen && isMessageOpen ? 'block' : isSmallScreen ? 'hidden' : 'block'
-        }`}
+        className={`w-[100%] md:w-[55%] border-r-3 border-gray-800 overflow-y-auto relative no-scrollbar ${isSmallScreen && isMessageOpen ? 'block' : isSmallScreen ? 'hidden' : 'block'
+          }`}
+
       >
         <nav className=" h-auto sticky top-0 z-10 bg-black ">
+
           {isSmallScreen && isMessageOpen && (
-            <button onClick={handleBack} className='text-white p-2'>
-              Back
+            <button onClick={handleBack} className='text-white p-2 flex gap-2.5'>
+
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-white" aria-hidden="true">
+                <path d="M7.414 13l5.043 5.04-1.414 1.42L3.586 12l7.457-7.46 1.414 1.42L7.414 11H21v2H7.414z"></path>
+              </svg> Back
+
             </button>
           )}
+
         </nav>
-        
+
         {/* CONTENT FOR RIGHT SIDE BAR */}
         <div className="">
-          <Outlet />
+
+        {!isMessageSelected && !isSmallScreen ? (
+            <div className="text-center p-4">
+              <h1></h1>
+            </div>
+          ) : (
+            <Outlet />
+          )}
+
         </div>
+
       </div>
       {/* END FOR RIGHT SIDE BAR */}
     </div>
