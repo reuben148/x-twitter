@@ -22,7 +22,7 @@ export default function UsersPost2() {
         <div className="justify-between items-center flex">
 
           <div className="flex gap-1 items-center">
-            <Link to='/Profile'><h1 className="font-extrabold text-lg">Web3bridge Africa </h1></Link>
+            <Link to='/Profile'><h1 className="font-extrabold text-lg">Web3bridge </h1></Link>
             
             {/* VERIFIED ICON */} 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-blue-500 mt-1 items-center" aria-hidden="true">
