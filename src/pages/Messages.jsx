@@ -106,12 +106,12 @@ export default function Messages() {
         <div className="">
 
         {!isMessageSelected && !isSmallScreen ? (
-            <div className="p-11 h-[100vh] w-full ">
-              <div>
+            <div className="p-11 h-[90vh] w-[80%] m-auto flex  ">
+              <div className='justify-center content-center'>
                 <h1 className='font-extrabold text-3xl' >Select a message</h1>
                 <p className='text-gray-500 text-[16px] font-medium my-2 mb-3.5 text-'>Choose from your existing conversations, start a new one, or just keep swimming.</p>
                 <Link to='/Messages'>
-                  <div className='bg-blue-500 w-fit p-3 font-bold rounded-2xl '>New message</div>
+                  <div className='bg-blue-500 w-fit p-3 font-bold rounded-full px-9 '>New message</div>
                 </Link>
               </div>
 
