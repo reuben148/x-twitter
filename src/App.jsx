@@ -173,7 +173,7 @@ export default function App() {
             {/* END FOR PROFILE ICON */}
 
             {/* MORE ICON */}
-            <Link to="#" className="w-fit sm:block hidden">
+            <Link to="/More" className="w-fit sm:block hidden">
               <div className="flex items-center p-2 gap-3 pr-4 text-[20px] hover:bg-gray-950  hover:rounded-full">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-7 h-7 text-white" aria-hidden="true">
                   <path d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z"></path>
@@ -232,7 +232,7 @@ export default function App() {
               <Route path='/Premium' element={<Premium />} />
               <Route path='/Business' element={<Business />} />
               <Route path='/Profile' element={<Profile />} />
-              {/* <Route path='/More' element={<More />} /> */}
+              <Route path='/More' element={<More />} />
 
             </Routes>
           </div>
