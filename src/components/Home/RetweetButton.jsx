@@ -1,109 +1,126 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 function RetweetButton() {
-  const [isOpen, setIsOpen] = useState(false);
-  const buttonRef = useRef(null);
-  const optionsRef = useRef(null);
+    const [isOpen, setIsOpen] = useState(false);
+    const buttonRef = useRef(null);
+    const optionsRef = useRef(null);
+    const [repost, setRepost] = useState(71)
+    const [reposted, setReposted] = useState(false);
+    const [success, setSuccess] = useState('')
 
-  const toggleOptions = () => {
-    setIsOpen(!isOpen);
-  };
+    const toggleOptions = () => {
+        setIsOpen(!isOpen);
+    };
 
-  const closeOptions = () => {
-    setIsOpen(false);
-  };
+    const closeOptions = () => {
+        setIsOpen(false);
+    };
 
-  const handleRetweet = () => {
-    console.log('Retweet clicked');
-    // Add your retweet logic here
-    closeOptions();
-  };
+    const handleRetweet = () => {
+        console.log('Retweet clicked');
+        if (reposted) {
+            setRepost(repost - 1);
+            setReposted(false);
+            setSuccess('text-gray-500') 
 
-  const handleQuote = () => {
-    console.log('Quote clicked');
-    // Add your quote logic here
-    closeOptions();
-  };
+        } else {
+            setRepost(repost + 1);
+            setReposted(true);
+            setSuccess('text-green-500')            
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        buttonRef.current &&
-        !buttonRef.current.contains(event.target) &&
-        optionsRef.current &&
-        !optionsRef.current.contains(event.target)
-      ) {
+        }
         closeOptions();
-      }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+
+    const handleQuote = () => {
+        console.log('Quote clicked');
+        if (reposted) {
+            setRepost(repost - 1);
+            setReposted(false);
+            setSuccess('text-gray-500') 
+            
+
+        } else {
+            setRepost(repost + 1);
+            setReposted(true);
+            setSuccess('text-green-500')  
+            
+        }
+        closeOptions();
     };
-  }, [buttonRef, optionsRef]);
 
-  return (
-    <div className="relative inline-block text-left">
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (
+                buttonRef.current &&
+                !buttonRef.current.contains(event.target) &&
+                optionsRef.current &&
+                !optionsRef.current.contains(event.target)
+            ) {
+                closeOptions();
+            }
+        };
 
-      <button
-        ref={buttonRef}
-        type="button"
-        className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
-        id="menu-button"
-        aria-expanded={isOpen}
-        aria-haspopup="true"
-        onClick={toggleOptions}
-      >
-        Retweet
-        <svg
-          className="-mr-1 ml-2 h-5 w-5"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <path
-            fillRule="evenodd"
-            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </button>
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [buttonRef, optionsRef]);
 
-      {isOpen && (
-        <div
-          ref={optionsRef}
-          className="origin-top-right absolute right-0 mt-2 w-auto rounded-md shadow-lg bg-black ring-1 ring-black ring-opacity-5 focus:outline-none"
-          role="menu"
-          aria-orientation="vertical"
-          aria-labelledby="menu-button"
-          tabIndex="-1"
-        >
-          <div className="py-1" role="none">
+    return (
+        <div className="relative inline-block text-left">
+
             <button
-              onClick={handleRetweet}
-              className="text-gray-700 block w-full text-left px-4 py-2 text-sm hover:bg-gray-100"
-              role="menuitem"
-              tabIndex="-1"
-              id="menu-item-0"
+                ref={buttonRef}
+                type="button"
+                className={`flex gap-2 justify-center w-full rounded-md ${success} shadow-sm px-4 py-2 text-sm font-medium  focus:text-green-600`}
+                id="menu-button"
+                aria-expanded={isOpen}
+                aria-haspopup="true"
+                onClick={toggleOptions}
             >
-              Retweet
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 " aria-hidden="true">
+                    <path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path>
+                </svg>
+                <span id='repost'>{repost}</span>
+
             </button>
-            <button
-              onClick={handleQuote}
-              className="text-gray-700 block w-full text-left px-4 py-2 text-sm hover:bg-gray-100"
-              role="menuitem"
-              tabIndex="-1"
-              id="menu-item-1"
-            >
-              Quote
-            </button>
-          </div>
+
+            {isOpen && (
+                <div
+                    ref={optionsRef}
+                    className=" border-2 border-gray-400 origin-top-right absolute right-0 mt-2 w-auto rounded-md shadow-lg bg-black ring-1 ring-black ring-opacity-5 focus:outline-none"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="menu-button"
+                    tabIndex="-1"
+                >
+                    <div className="py-1" role="none">
+                        <button
+                            onClick={handleRetweet}
+                            className="text-white block w-full font-bold text-left px-4 py-2 text-sm hover:bg-gray-950"
+                            role="menuitem"
+                            tabIndex="-1"
+                            id="menu-item-0"
+                        >
+                            Retweet
+                        </button>
+                        <button
+                            onClick={handleQuote}
+                            className="text-white block w-full text-left px-4 py-2 text-sm hover:bg-gray-950 font-bold"
+                            role="menuitem"
+                            tabIndex="-1"
+                            id="menu-item-1"
+                        >
+                            Quote
+                        </button>
+
+                    </div>
+                </div>
+            )}
         </div>
-      )}
-    </div>
-  );
+    );
 }
 
 export default RetweetButton;
