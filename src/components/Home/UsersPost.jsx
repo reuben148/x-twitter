@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import UserReactions from "./UserReactions"
 import UsersPost2 from "./UsersPost2"
+import VideoPostOne from "./VideoPostOne"
 
 export default function UsersPost() {
   return (
@@ -89,6 +90,11 @@ export default function UsersPost() {
       {/* SECOND USERS POST */}
       <div>
         <UsersPost2 />
+      </div>
+
+      {/* Third Users Post */}
+      <div>
+        <VideoPostOne/>
       </div>
 
     </div>
