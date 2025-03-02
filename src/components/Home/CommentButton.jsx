@@ -21,7 +21,7 @@ const CommentButton = () => {
     <div className=''>
       <button
         onClick={handleCommentClick}
-        className="flex items-center text-gray-500"
+        className="flex items-center gap-2 hover:text-blue-500 cursor-pointer text-gray-500"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

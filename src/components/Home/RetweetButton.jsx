@@ -80,7 +80,7 @@ function RetweetButton() {
             <button
                 ref={buttonRef}
                 type="button"
-                className={`flex gap-2 justify-center w-full rounded-md ${success} shadow-sm px-4 text-sm font-medium  focus:text-green-600`}
+                className={`flex gap-2 cursor-pointer justify-center w-full rounded-md ${success} shadow-sm text-sm font-medium  focus:text-green-600`}
                 id="menu-button"
                 aria-expanded={isOpen}
                 aria-haspopup="true"
