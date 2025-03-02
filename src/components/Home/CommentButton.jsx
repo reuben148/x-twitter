@@ -36,7 +36,7 @@ const CommentButton = () => {
       </button>
 
       {isPopupOpen && (
-        <div className="fixed inset-0 bg-opacity-50 flex w-[95%] justify-center items-center">
+        <div className="fixed inset-0 bg-opacity-50 flex sm:w-[95%] w-full justify-center items-center">
           <div className="bg-black border-2  border-gray-800 rounded-lg p-6 w-full max-w-md relative">
             <button
               onClick={handleClosePopup}
