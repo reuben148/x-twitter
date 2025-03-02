@@ -228,7 +228,7 @@ export default function App() {
                 <Route path='UserMessageThree' element={<UserMessageThree />} />
               </Route>
               <Route path='/Grok' element={<Grok />} />
-              <Route path='/Communities' element={<Communities />} />
+              <Route path='/Communities' element={<Communities />} /> 
               <Route path='/Premium' element={<Premium />} />
               <Route path='/Business' element={<Business />} />
               <Route path='/Profile' element={<Profile />} />

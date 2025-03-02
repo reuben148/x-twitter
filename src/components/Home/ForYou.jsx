@@ -8,7 +8,6 @@ export default function ForYou() {
     <div className=' text-white h-auto border-gray-800 border-r-2 mb-14 sm:mb-0'>
       <Post/>
       <UsersPost/> 
-      <VideoTesting/>
     </div>
   )
 }

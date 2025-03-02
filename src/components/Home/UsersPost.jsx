@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom"
 import UserReactions from "./UserReactions"
 import UsersPost2 from "./UsersPost2"
-import VideoPostOne from "./VideoPostOne"
+import VideoTesting from "./VideoTesting"
+import VideoPostTwo from "./VideoPostTwo"
+
 
 export default function UsersPost() {
   return (
@@ -94,7 +96,12 @@ export default function UsersPost() {
 
       {/* Third Users Post */}
       <div>
-        <VideoPostOne/>
+      <VideoTesting/>
+      </div>
+
+      {/* Forth Users Post */}
+      <div>
+      <VideoPostTwo/>
       </div>
 
     </div>

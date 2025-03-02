@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import UserReactions from "./UserReactions";
 
 
-const VideoTesting = () => {
+const VideoPostTwo = () => {
     const videoRefs = useRef({});
 
 
@@ -11,12 +11,12 @@ const VideoTesting = () => {
     const posts = [
         {
             id: "post1",
-            profilePic: "/custos.jpg",
-            author: "Custos_",
-            username: "@custos__",
-            content: "With Custos Directus you can secure and save your agreements and evidence on-chain.",
-            hashtags: ["#Starknet ", "  #Starknet11"],
-            videoSrc: "/StarknetVideo.mp4",
+            profilePic: "/jaytee.jpg",
+            author: "Dev_jaytee",
+            username: "@jaytee",
+            content: "Solidity & Cairo is building block language one need to learn to build Smart Contracts on EVM & Starknet.",
+            hashtags: ["#Solidity ", "  #Cairo", "  #Mano"],
+            videoSrc: "/videoOne.mp4",
         }
 
     ];
@@ -45,7 +45,7 @@ const VideoTesting = () => {
     return (
         <div className="">
 
-            <div className=" w-[100%]  bg-black border-b-2 border-gray-800 ">
+            <div className=" w-[100%]  bg-black border-b-2 border-gray-800 mb-10 ">
 
                 {/* Posts */}
                 {posts.map((post) => (
@@ -134,4 +134,4 @@ const VideoTesting = () => {
     );
 };
 
-export default VideoTesting;
+export default VideoPostTwo;
