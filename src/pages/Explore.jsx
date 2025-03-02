@@ -15,7 +15,7 @@ export default function Explore() {
     <div className='flex h-[100vh] w-full '>
 
     {/* MIDDLE FOR EXPLORE */}
-    <div className=" w-full md:w-[60%] overflow-y-auto relative no-scrollbar border-r-2 border-gray-900"> 
+    <div className=" w-full h-[100vh] md:w-[60%] overflow-y-auto relative no-scrollbar border-r-2 border-gray-900"> 
 
         <nav className=" h-auto sticky top-0 z-10 bg-black border-b-2 border-gray-800 "> 
 
@@ -31,7 +31,7 @@ export default function Explore() {
             </div>
 
             {/* NAVIGATIONS */}
-            <div className="grid grid-cols-5 items-center ">
+            <div className="grid sm:grid-cols-5 grid-cols-4 items-center w-full ">
 
               <Link className="text-center p-2 text-white font-bold "> 
               <h1 className="border-b-4 border-blue-500 py-2 ">For you</h1>
@@ -53,7 +53,7 @@ export default function Explore() {
               </Link>
 
               
-              <Link className="text-center p-2 text-gray-500 font-medium"> 
+              <Link className="text-center p-2 sm:block hidden text-gray-500 font-medium"> 
               <h1>Entertainment</h1>
               </Link>
 
@@ -62,7 +62,7 @@ export default function Explore() {
         </nav>
 
         {/* MIDLE CONTENT */}
-        <div className=" ">
+        <div className=" w-full ">
           <FirstContent/>
           <TodaysNews/>
           <ExploreWhatsHappening/>

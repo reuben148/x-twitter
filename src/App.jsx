@@ -20,28 +20,7 @@ export default function App() {
     <BrowserRouter >
       <div className="bg-black h-[100vh]  ">
 
-        {/* MOBILE SCREEN NAV BAR */}
-        <div className="flex w-full sm:hidden h-auto items-center p-3 justify-between px-4 fixed bg-black ">
-
-          {/* USER IMAGE */}
-          <Link to="/Profile" className="sm:mt-2 mt-0 w-fit sm:p-2 hover:bg-gray-900 hover:rounded-full">
-            <img src={UserImage} className="w-11 h-11 rounded-full" />
-          </Link>
-
-          {/* X LOGO */}
-          <Link to="/" className="sm:mt-2 mt-0 w-fit sm:p-2 hover:bg-gray-900 hover:rounded-full">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-9 h-9 text-white" aria-hidden="true">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
-            </svg>
-          </Link>
-
-          {/* UPGRADE PREMIUM */}
-          <Link to="/Premium" className="sm:mt-2 mt-0 w-fit sm:p-2 text-white hover:bg-gray-900 hover:rounded-full">
-            <span className="px-3 font-bold py-1 border-1 border-white rounded-full">Upgrade</span>
-          </Link>
-
-        </div>
-        {/* END FOR MOBILE SCREEN NAV BAR */}
+        
 
         {/* WRAPING CONTAINER THAT HOLDS THE LEFT NAV BAR AND CONTENT DISPLAY */}
         <div className="bg-black flex md:w-[90%] sm:w-[95%] m-auto  ">
