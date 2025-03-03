@@ -12,16 +12,16 @@ export default function TodaysNews() {
             <div className='flex p-4 w-full hover:bg-gray-950'>
 
                 <div className='w-[80%] space-y-2'>
-                    <h1 className='font-bold '>FBI Whistleblower Claims Espein Files Being Deleted</h1>
+                    <h1 className='font-bold '>Trump Unveils Crypto Strategic Reserve</h1>
                     <div className='flex items-center'>
-                        <img src="/fePresi.jpg" className=' rounded-full w-7 h-7 border-black border-3'  />
+                        <img src="/reuben.jpeg" className=' rounded-full w-7 h-7 border-black border-3'  />
                         <img src="/mano.jpg" className='rounded-full w-7 h-7 -ml-2 border-black border-3'  />
-                        <p className='text-sm text-gray-500 ml-2'>17 hours ago News 772k posts</p>
+                        <p className='text-sm text-gray-500 ml-2'>7 hours ago · News · 12K posts</p>
                     </div>
                 </div>
 
                 <div className='w-[20%]'>
-                    <img src="/fePresi.jpg" className='rounded-2xl' />
+                    <img src="/zelen.jpeg" className='rounded-2xl' />
                 </div>
 
             </div>
@@ -33,16 +33,16 @@ export default function TodaysNews() {
             <div className='flex p-4 w-full hover:bg-gray-950'>
 
                 <div className='w-[80%] space-y-2'>
-                    <h1 className='font-bold '>Revenge of the Sith 20th Anniversary Screening</h1>
+                    <h1 className='font-bold '>South Carolina Wildfires: State of Emergency Declared</h1>
                     <div className='flex items-center'>
-                        <img src="/presi.jpg" className=' rounded-full w-7 h-7 border-black border-3'  />
-                        <img src="/akan.jpg" className='rounded-full w-7 h-7 -ml-2 border-black border-3'  />
-                        <p className='text-sm text-gray-500 ml-2'>2 hours ago Entertainment 25k posts</p>
+                        <img src="/fire.jpeg" className=' rounded-full w-7 h-7 border-black border-3'  />
+                        <img src="/mclaren.jpeg" className='rounded-full w-7 h-7 -ml-2 border-black border-3'  />
+                        <p className='text-sm text-gray-500 ml-2'>23 hours ago · News · 53K posts</p>
                     </div>
                 </div>
 
                 <div className='w-[20%]'>
-                    <img src="/presi.jpg" className='rounded-2xl' />
+                    <img src="/fire.jpeg" className='rounded-2xl' />
                 </div>
 
             </div>
@@ -54,11 +54,11 @@ export default function TodaysNews() {
             <div className='flex p-4 w-full hover:bg-gray-950'>
 
                 <div className='w-[80%] space-y-2'>
-                    <h1 className='font-bold '>Trump's Surprise Visit to Reopened White House</h1>
+                    <h1 className='font-bold '>Europe Unites for Ukraine Peace at London Summit</h1>
                     <div className='flex items-center'>
-                        <img src="/trump.jpg" className=' rounded-full w-7 h-7 border-black border-3'  />
-                        <img src="/mano.jpg" className='rounded-full w-7 h-7 -ml-2 border-black border-3'  />
-                        <p className='text-sm text-gray-500 ml-2'>Trending now News 12k posts</p>
+                        <img src="/shark.jpeg" className=' rounded-full w-7 h-7 border-black border-3'  />
+                        <img src="/mano.jpeg" className='rounded-full w-7 h-7 -ml-2 border-black border-3'  />
+                        <p className='text-sm text-gray-500 ml-2'>5 hours ago · News · 164K posts</p>
                     </div>
                 </div>
 

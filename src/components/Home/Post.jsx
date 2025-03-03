@@ -6,9 +6,9 @@ export default function Post() {
     <div className='flex p-3 py-4 gap-2 border-b-1 border-gray-900  '>
 
       <div className="w-[10%] items-end">
-        <Link to='/Profile'>
-            <img src='/akan.jpg' className='w-11 h-11 rounded-full' />
-        </Link>
+       
+            <img src='/reuben.jpg' className='w-11 h-11 rounded-full' />
+        
       
       </div>
 

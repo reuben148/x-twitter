@@ -14,7 +14,7 @@ export default function Home() {
 
         {/* USER IMAGE */}
         <Link to="/Profile" className="sm:mt-2 mt-0 w-fit sm:p-2 hover:bg-gray-900 hover:rounded-full">
-          <img src='/akan.jpg' className="w-11 h-11 rounded-full" />
+          <img src='/reuben.jpg' className="w-11 h-11 rounded-full" />
         </Link>
 
         {/* X LOGO */}
@@ -34,7 +34,7 @@ export default function Home() {
 
 
       {/* MIDDLE HOME FOR CONTENT */}
-      <div className=' fd:w-[60%] h-auto w-full text-white overflow-y-auto relative no-scrollbar '>
+      <div className=' md:w-[70%] h-auto w-full text-white overflow-y-auto relative no-scrollbar '>
 
 
 
@@ -55,7 +55,7 @@ export default function Home() {
       </div>
       {/* END FOR MIDDLE HOME FOR CONTENT */}
 
-      <div className='w-[40%] fd:block hidden pl-8 overflow-y-auto relative no-scrollbar '>
+      <div className='md:w-[40%] md:block hidden overflow-y-auto relative no-scrollbar '>
 
         {/* SEARCH SECTION */}
         <div className="top-0  fixed w-[26.5%] bg-black ">

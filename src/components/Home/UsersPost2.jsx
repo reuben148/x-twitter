@@ -8,7 +8,7 @@ export default function UsersPost2() {
       {/* IMAGE OF THE USER */}
       <div className="w-[10%] items-end">
         <Link to='/Profile'>
-          <img src='/web3bridge.jpg' className='w-11 h-11 rounded-full' />
+          <img src='/mclaren.jpeg' className='w-11 h-11 rounded-full' />
         </Link>
 
       </div>
@@ -22,7 +22,7 @@ export default function UsersPost2() {
         <div className="justify-between items-center flex">
 
           <div className="flex gap-1 items-center">
-            <Link to='/Profile'><h1 className="font-extrabold text-lg">Web3bridge </h1></Link>
+            <Link to='/Profile'><h1 className="font-extrabold text-lg">Polanco.exotic</h1></Link>
             
             {/* VERIFIED ICON */} 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-blue-500 mt-1 items-center" aria-hidden="true">
@@ -30,9 +30,9 @@ export default function UsersPost2() {
             </svg>
             {/* END FOR VERIFIED ICON */}
 
-            <p className="font-light text-gray-400 text-lg">@Web3Bridger</p>
+            <p className="font-light text-gray-400 text-lg">@Polanco</p>
             <p className="text-gray-400 -mt-2 font-bold">.</p>
-            <p className="font-light text-gray-400">53m</p>
+            <p className="font-light text-gray-400">1m</p>
           </div>
 
           {/* DOTTED ICON */}
@@ -49,18 +49,15 @@ export default function UsersPost2() {
 
         {/* POST WRITE-UP */}
         <div className="w-full space-y-4 text-[15px] font-semibold ">
-          <p >You want to become a Web3 developer, and you’re not joining Web3Bridge? 👀👀</p>
+          <p >Tag a buyer</p>
 
-          <p>This look says it all—rethink your choices, my friend. 😏</p>
+          <p>To buy the tesla cyber trucker for just $200k</p>
 
-          <p>Click the link and join the waitlist to be a part of our next Cohort! 🚀
-          <a href="https://web3bridgeafrica.com/register" className="text-blue-500">web3bridgeafrica.com/register</a></p>
-
-          <p className="text-blue-500"> #Web3Bridge #JoinTheCommunity #Web3 </p>
+          <p className="text-blue-500"> #polanco #Wizkid </p>
           
         </div>
 
-        <img src="/web3bridge.jpg" className="rounded-2xl mt-3"  />
+        <img src="/tesla.jpeg" className="rounded-2xl mt-3"  />
         {/* END FOR POST WRITE-UP */}
 
 

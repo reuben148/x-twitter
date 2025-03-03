@@ -10,7 +10,7 @@ export default function ExploreWhatsHappening() {
 
                 <div className="flex items-center justify-between">
                     <div>
-                        <h1 className="text-gray-500 text-sm">Business & Finance</h1>
+                        <h1 className="text-gray-500 text-sm">Entertainment · Trending</h1>
                     </div>
 
                     {/* DOTTED ICON */}
@@ -23,10 +23,10 @@ export default function ExploreWhatsHappening() {
 
                 </div>
 
-                <h1 className="font-bold">Binance</h1>
+                <h1 className="font-bold">Joselyn Dumas</h1>
                 
                 <div>
-                    <h1 className="text-gray-500 text-sm">435k posts</h1>
+                    <h1 className="text-gray-500 text-sm">1,657 posts</h1>
                 </div>
 
             </div>
@@ -37,7 +37,7 @@ export default function ExploreWhatsHappening() {
 
                 <div className="flex items-center justify-between">
                     <div>
-                        <h1 className="text-gray-500 text-sm">Trending in Nigeria</h1>
+                        <h1 className="text-gray-500 text-sm">Sports · Trending</h1>
                     </div>
 
                     {/* DOTTED ICON */}
@@ -50,7 +50,12 @@ export default function ExploreWhatsHappening() {
 
                 </div>
 
-                <h1 className="font-bold">#Manoah</h1>
+                <h1 className="font-bold">Lamineyamal</h1>
+
+
+                <div>
+                    <h1 className="text-gray-500 text-sm">400k posts</h1>
+                </div>
 
             </div>
             {/* END FOR CONTENT */}
@@ -61,7 +66,7 @@ export default function ExploreWhatsHappening() {
 
                 <div className="flex items-center justify-between">
                     <div>
-                        <h1 className="text-gray-500 text-sm">Music Trends</h1>
+                        <h1 className="text-gray-500 text-sm">Entertainment · Trending</h1>
                     </div>
 
                     {/* DOTTED ICON */}
@@ -74,8 +79,8 @@ export default function ExploreWhatsHappening() {
 
                 </div>
 
-                <h1 className="font-bold">#Tweeqle</h1>
-                <h1 className="text-gray-500 text-sm">135k posts</h1>
+                <h1 className="font-bold">#Oscars</h1>
+                <h1 className="text-gray-500 text-sm">205k posts</h1>
 
             </div>
             {/* END FOR CONTENT Two */}
@@ -86,7 +91,7 @@ export default function ExploreWhatsHappening() {
 
                 <div className="flex items-center justify-between">
                     <div>
-                        <h1 className="text-gray-500 text-sm">Business & Finance Trending</h1>
+                        <h1 className="text-gray-500 text-sm">Entertainment · Trending</h1>
                     </div>
 
                     {/* DOTTED ICON */}
@@ -99,8 +104,8 @@ export default function ExploreWhatsHappening() {
 
                 </div>
 
-                <h1 className="font-bold">Starknet</h1>
-                <h1 className="text-gray-500 text-sm">1.4M posts</h1>
+                <h1 className="font-bold">#RHOLagos</h1>
+                <h1 className="text-gray-500 text-sm">20M post</h1>
 
             </div>
             {/* END FOR CONTENT Three */}

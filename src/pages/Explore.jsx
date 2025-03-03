@@ -78,11 +78,11 @@ export default function Explore() {
     <div className=" w-[40%] h-[100vh] md:block hidden sticky top-0 pl-8">
 
       <WhoToFollow/>
-      <div className="-mt-11">
-      <SubToPremium />
+      <div className="-mt-1">
+      <Terms/>
       </div>
       
-      <Terms/>
+      
     </div>
     {/* END FOR RIGHT SIDE BAR */} 
 

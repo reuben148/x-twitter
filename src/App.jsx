@@ -20,8 +20,6 @@ export default function App() {
     <BrowserRouter >
       <div className="bg-black h-[100vh]  ">
 
-        
-
         {/* WRAPING CONTAINER THAT HOLDS THE LEFT NAV BAR AND CONTENT DISPLAY */}
         <div className="bg-black flex md:w-[90%] sm:w-[95%] m-auto  ">
 
@@ -120,9 +118,9 @@ export default function App() {
             {/* PREMIUM ICON */}
             <Link to="/Premium" className="w-fit sm:block hidden">
               <div className="flex items-center p-2 gap-3 pr-4 text-[20px] hover:bg-gray-950  hover:rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-7 h-7 text-white" aria-hidden="true">
-                  <path d="M8.52 3.59c.8-1.1 2.04-1.84 3.48-1.84s2.68.74 3.49 1.84c1.34-.21 2.74.14 3.76 1.16s1.37 2.42 1.16 3.77c1.1.8 1.84 2.04 1.84 3.48s-.74 2.68-1.84 3.48c.21 1.34-.14 2.75-1.16 3.77s-2.42 1.37-3.76 1.16c-.8 1.1-2.05 1.84-3.49 1.84s-2.68-.74-3.48-1.84c-1.34.21-2.75-.14-3.77-1.16-1.01-1.02-1.37-2.42-1.16-3.77-1.09-.8-1.84-2.04-1.84-3.48s.75-2.68 1.84-3.48c-.21-1.35.14-2.75 1.16-3.77s2.43-1.37 3.77-1.16zm3.48.16c-.85 0-1.66.53-2.12 1.43l-.38.77-.82-.27c-.96-.32-1.91-.12-2.51.49-.6.6-.8 1.54-.49 2.51l.27.81-.77.39c-.9.46-1.43 1.27-1.43 2.12s.53 1.66 1.43 2.12l.77.39-.27.81c-.31.97-.11 1.91.49 2.51.6.61 1.55.81 2.51.49l.82-.27.38.77c.46.9 1.27 1.43 2.12 1.43s1.66-.53 2.12-1.43l.39-.77.82.27c.96.32 1.9.12 2.51-.49.6-.6.8-1.55.48-2.51l-.26-.81.76-.39c.91-.46 1.43-1.27 1.43-2.12s-.52-1.66-1.43-2.12l-.77-.39.27-.81c.32-.97.12-1.91-.48-2.51-.61-.61-1.55-.81-2.51-.49l-.82.27-.39-.77c-.46-.9-1.27-1.43-2.12-1.43zm4.74 5.68l-6.2 6.77-3.74-3.74 1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36z"></path>
-                </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 text-white" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+              </svg>
                 <span className="md:block hidden" >Premium</span>
               </div>
             </Link>
@@ -174,10 +172,10 @@ export default function App() {
             <div className="sm:block hidden cursor-pointer py-5 md:flex fixed bottom-0 items-center justify-end rounded-full mt-3 font-bold w-fit">
 
               <div className="flex ">
-                <img src={UserImage} className="w-11 h-11 rounded-full" />
+                <img src="/reuben.jpg" className="w-11 h-11 rounded-full" />
                 <div className="ml-2 md:block hidden ">
-                  <h5 className="text-white">Akan </h5>
-                  <p className="text-gray-600 -mt-1 font-medium">@akanimoh__</p>
+                  <h5 className="text-white">reubenluka555 </h5>
+                  <p className="text-gray-600 -mt-1 font-medium">@reuben_dev</p>
                 </div>
               </div>
 

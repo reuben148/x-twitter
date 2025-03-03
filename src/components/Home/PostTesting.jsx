@@ -55,7 +55,7 @@ export default function PostTesting() {
         <div className="flex items-center mb-4">
           <Link to="/Profile">
             <img
-              src="/akan.jpg"
+              src="/reuben.jpg"
               alt="profile"
               className="w-10 h-10 rounded-full"
             />

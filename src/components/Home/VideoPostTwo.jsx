@@ -11,12 +11,12 @@ const VideoPostTwo = () => {
     const posts = [
         {
             id: "post1",
-            profilePic: "/jaytee.jpg",
-            author: "Dev_jaytee",
-            username: "@jaytee",
-            content: "Solidity & Cairo is building block language one need to learn to build Smart Contracts on EVM & Starknet.",
-            hashtags: ["#Solidity ", "  #Cairo", "  #Mano"],
-            videoSrc: "/videoOne.mp4",
+            profilePic: "/reuben.jpeg",
+            author: "reubenluka555",
+            username: "@reuben.dev",
+            content: "live with @starnet bird",
+            hashtags: [ "  #starknet", "  #tweetle"],
+            videoSrc: "/twettle.mp4",
         }
 
     ];
@@ -79,7 +79,7 @@ const VideoPostTwo = () => {
 
                                     <p className="font-light text-gray-400 text-lg">{post.username}</p>
                                     <p className="text-gray-400 -mt-2 font-bold">.</p>
-                                    <p className="font-light text-[16px] text-gray-400">56m</p>
+                                    <p className="font-light text-[16px] text-gray-400">3d</p>
                                 </div>
 
                                 {/* DOTTED ICON */}

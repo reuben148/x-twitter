@@ -9,13 +9,5 @@
     .no-scrollbar::-webkit-scrollbar {
       display: none;
     }
+} 
 
-    
-  };
-  
-  @theme {
-    --breakpoint-fd: 900px;
-    --breakpoint-md: 64rem;
-    --breakpoint-2xl: 100rem;
-    --breakpoint-3xl: 120rem;
-  }
