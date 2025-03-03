@@ -3,10 +3,10 @@ import RetweetButton from "./RetweetButton";
 import CommentButton from "./CommentButton";
 
 export default function UserReactions() {
-    const [likes, setLikes] = useState(98);
+    const [likes, setLikes] = useState(40);
     const [liked, setLiked] = useState(false);
     const [love, setLove] = useState(22)
-    const [comment, setComment] = useState(67)
+    const [comment, setComment] = useState(2)
     const [successLiked, setSuccessLiked] = useState('')
     
 

@@ -133,7 +133,7 @@ export default function App() {
                   <path d="M7.323 2h11.443l-3 5h6.648L6.586 22.83 7.847 14H2.523l4.8-12zm1.354 2l-3.2 8h4.676l-.739 5.17L17.586 9h-5.352l3-5H8.677z"></path>
                 </svg>
                 <span className="md:block hidden" >Business</span>
-                <span className="md:block hidden px-2 bg-blue-600 rounded text-[12px] font-bold">30% off</span>
+                
               </div>
             </Link>
             {/* END FOR BUSINESS ICON */}
