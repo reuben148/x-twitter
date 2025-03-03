@@ -6,6 +6,11 @@ export default function WhatsHappening() {
 
             <h5 className="font-extrabold text-2xl p-5">What's happening</h5>
 
+            <div className="flex">
+            <img src="/fire.jpeg" className=' rounded-[10px] w-[100px] h-[100px] border-black border-3 ml-[20px]' />
+            <p className="font-serif">Fashion Weeks Womenswear FW25/26</p>
+            </div>
+
             {/* CONTENT */}
             <div className="p-3 px-5 hover:bg-gray-950">
 
